@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6b8eeb21dd.js" crossorigin="anonymous"></script>
+  <title>Memory game</title>
+</head>
+<body class="backgroundColor">
+  <main>
+  <div class="mainIndex">
+    <div class="button-hide">
+        
+      <div class="main_l">
+       <h2 id="memory_logo">memory</h2>
+
+      </div>
+       <div class="top_btn_div">
+         <button class="menu_btn top_btn" id="menu">menu</button>
+         <button class="btn_restart top_btn" id="restart">Restart</button>
+         <button class="btn_new top_btn" id="new_game">New Game</button>
+       </div>
+     </div>
+   <div class="grid"></div>  
+
+    <!-- Game setup start -->
+    <div class="logo_div">
+      
+    </div>
+    <div class="setupStart-container">
+      <div class="setupStart-mainMenu">
+        <!--Theme-->
+        <div class="select_div theme-section">
+          <h3 class="select-h3">Select Theme</h3>
+          <div class="button-select">
+            <button class="btn mid_btn btn_num dark_blue_btn" type="button" name="numbers">Numbers</button>
+            <button class="btn mid_btn btn_icon light_blue_btn" type="button" name="Icons">Icons</button>
+          </div>
+        </div>
+        <!--Player Number-->
+        <div class="select_div">
+          <h3 class="select-h3">Number of Players</h3>
+          <div class="button-select">
+            <button class="btn small_btn player_1 " type="button" name="one">1</button>
+            <button class="btn small_btn player_2" type="button" name="two">2</button>
+            <button class="btn small_btn player_3" type="button" name="three">3</button>
+            <button class="btn small_btn player_4" type="button" name="four">4</button>
+          </div>
+        </div>
+        <!--Grid Size-->
+        <div class="select_div">
+          <h3 class="select-h3"> Grid Size</h3>
+          <div class="button-select">
+            <button class="btn mid_btn grid4x4" type="button" name="4x4grid">4x4</button>
+            <button class="btn mid_btn grid6x6" type="button" name="6x6grid">6x6</button>
+          </div>
+        </div>
+        <!--Start Button-->
+        <button  class="start_btn" type="button" name="start">Start Game</button>
+    
+    <!-- Game setup end -->
+      </div>
+    </div>
+
+    <div class="player-container large-player-container"> </div>
+
+    <div class="results-dark">
+      <div class="modal">
+        <h2 class="heading">Game Over</h2>
+        <p class="sub-heading">Game over! here are the results...</p>
+        <div class="player-list"></div>
+        <div class="results-button-container">
+          <button class="results_btn results_restart" type="button" name="button">Restart</button>
+          <button class="results_btn results_new_game" type="button" name="button">Setup New Game</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pause ">
+      <div id="pause_cont" class="modal">
+        <div class="pause_btn_cnt ">
+          <button class="results_btn results_restart ph" type="button" name="button">Restart</button>
+          <button class="results_btn results_new_game ph" type="button" name="button">New Game</button>
+          <button id="resume_btn" class="results_btn resume ph" type="button" name="button">Resume Game</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="no_click"></div>
+
+  </main>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/e7181e4259.js" crossorigin="anonymous"></script>
+</body>
+</html>
